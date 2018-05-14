@@ -71,6 +71,7 @@ header {
 	border-radius: 3px;
 	padding-top: 20px;
 	border-bottom: 4px solid #6DC7D0;
+    border-radius: 5px;
 }
 .gallery .thumbnail h4 {
 	margin-top: 5px;
@@ -181,7 +182,7 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 320px) {
+@media (max-width: 414px) {
 .logo {
 	width: 100%;
 	text-align: center;
@@ -189,6 +190,7 @@ footer {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+    font-size: 22px;
 }
 .text_column {
 	width: 100%;
@@ -204,6 +206,7 @@ footer {
 }
 .thumbnail {
 	width: 100%;
+    border-radius: 0px;
 }
 .column {
 	width: 100%;
@@ -221,7 +224,7 @@ footer {
 }
 
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media (min-width: 415px)and (max-width: 769px) {
 .logo {
 	width: 100%;
 	text-align: center;
@@ -229,6 +232,7 @@ footer {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
+    font-size: 50px;
 }
 .text_column {
 	width: 100%;
@@ -244,6 +248,7 @@ footer {
 }
 .thumbnail {
 	width: 100%;
+    border-radius: 0px;
 }
 .text_column {
 	padding-left: 20px;
@@ -269,12 +274,13 @@ footer {
 }
 
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media (min-width: 770px) and (max-width: 1096px) {
 .text_column {
 	width: 100%;
 }
 .thumbnail {
 	width: 48%;
+    border-radius: 5px;
 }
 .text_column {
 	width: 90%;
