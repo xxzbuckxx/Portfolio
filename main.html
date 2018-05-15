@@ -25,6 +25,15 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
     </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(".profile").hover(function(){
+		$(this).animate({height: "400", width: "400"}, "fast");
+	}, function(){
+		$(this).animate({height: "350", width: "350"}, "fast");
+	});
+	
+  </script>
   <!-- Stats Gallery Section -->
   <div class="gallery">
     <div class="thumbnail"> <a href="http://blobmob.us/"><img src="images/blobmob.png" alt="" width="2000" class="cards"/></a>
