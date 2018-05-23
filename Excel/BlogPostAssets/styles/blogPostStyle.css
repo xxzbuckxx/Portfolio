@@ -50,14 +50,35 @@ a {
 	text-decoration: none;
 }
 #wrapper {
+    text-align: justify;
 	padding: .2em 1em 2em 1em;
 	grid-column: 2 / 3;
-	font-size: 20px;
+	font-size: 30px;
 	color: #FFFFFF;
 	background-color: #5D5E5D;
 }
-#wrapper img {
-	width: 100%;
+#thumbnail {
+    margin-top: 20px;
+    display: block;
+    background-color: #F8F8F8;
+    border-bottom: 4px solid #6DC7D0;
+    padding: 0px;
+}
+#thumbnail:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#examples img {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#examples #thumbnail p {
+    font-size: 50px;
+    display: inline-block;
+    height: 25px;
+    margin-top: 10px;
+    padding: 0px;
 }
 @media screen and (max-width:769px) {
 	
