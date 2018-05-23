@@ -15,6 +15,14 @@
   <header class="header">
     <h4 class="logo">My Digital Portfolio.</h4>
   </header>
+  <div class="menu">
+      <ul>
+        <li><a href="#">Most Creative</a></li>
+        <li><a href="#">Best Cources</a</li>
+        <li><a href="#">Other Works</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+  </div>
   <!-- Hero Section -->
   <section class="intro">
     <div class="column">
@@ -27,12 +35,19 @@
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
+      /*
 	$(".profile").hover(function(){
 		$(this).animate({height: "400", width: "400"}, "fast");
 	}, function(){
 		$(this).animate({height: "350", width: "350"}, "fast");
-	});
-	
+	});*/
+	$(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 178) {
+            $('.menu').addClass('fixed');
+        } else {
+            $('.menu').removeClass('fixed');
+        }
+    });
   </script>
   <!-- Stats Gallery Section -->
   <div class="gallery">
