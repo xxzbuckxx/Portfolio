@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital Portfolio</title>
-<link href="simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<link href="assets/simpleGridTemplate.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nunito" rel="stylesheet">
 </head>
 <body>
@@ -17,9 +17,9 @@
   </header>
   <div class="menu">
       <ul>
-        <li><a href="#">Most Creative</a></li>
-        <li><a href="#">Best Cources</a</li>
-        <li><a href="#">Other Works</a></li>
+        <li><a href="Most%20Creative/Creative.html">Most Creative</a></li>
+        <li><a href="Best%20Cources/Best.html">Best Cources</a</li>
+        <li><a href="https://github.com/xxzbuckxx">Github</a></li>
         <li><a href="#">About</a></li>
       </ul>
   </div>
@@ -27,7 +27,7 @@
   <section class="intro">
     <div class="column">
       <h3>Zack Traczyk</h3>
-      <img src="images/profile.JPG" alt="This is me, Zack Traczyk!" class="profile"> </div>
+      <img src="assets/images/profile.JPG" alt="This is me, Zack Traczyk!" class="profile"> </div>
     <div class="column">
       <p>When posed with the question, "Who is Zack Traczyk?" --the words hardworking and willing to learn come quickly to mind. As an aved coder and persistant learner, I throw myself at daunting problems, always trying to understand how they work and what is the best solution.</p>
       <p>Here you can find a few of the projects I have done over the years. Some are done, some are inprogress, and some are to be left uncompleted.</p>
@@ -44,32 +44,32 @@
 	$(window).bind('scroll', function () {
         if ($(window).scrollTop() > 178) {
             $('.menu').addClass('fixed');
-        } else {
+        } else if($(window).scrollTop() < 130){
             $('.menu').removeClass('fixed');
         }
     });
   </script>
   <!-- Stats Gallery Section -->
   <div class="gallery">
-    <div class="thumbnail"> <a href="http://blobmob.us/"><img src="images/blobmob.PNG" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="http://blobmob.us/"><img src="assets/images/blobmob.PNG" alt="" width="2000" class="cards"/></a>
       <h4>Blob Mob <i>Dec 2016 - NOW</i></h4>
       <p class="tag">HTML, CSS, JS + howler, Git</p>
       <p class="text_column">Blob Mob is a Javascript web game using HTML5's canvas tag. This was my first big coding project and was design from scratch (except Howler.js for sound).</p>
       <p class="text_footer"><a href="https://github.com/xxzbuckxx/Blob-Mob">More information</a></p>
     </div>
-    <div class="thumbnail"> <a href="https://github.com/xxzbuckxx/Blob-Mob-Story-Mode/wiki"><img src="images/blobmobsm.PNG" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="https://github.com/xxzbuckxx/Blob-Mob-Story-Mode/wiki"><img src="assets/images/blobmobsm.PNG" alt="" width="2000" class="cards"/></a>
       <h4>Blob Mob - Story Mode<i>January 2018 - NOW</i></h4>
       <p class="tag">HTML, CSS, JS + Jquery, Git</p>
       <p class="text_column">Unfinished sequel to Blob Mob with a bigger focus on art and story. You can find a log and current status in the wiki and project pages of the github page.</p>
       <p class="text_footer"><a href="https://github.com/xxzbuckxx/Blob-Mob-Story-Mode">More information</a></p>
     </div>
-    <div class="thumbnail"> <a href="http://philome.la/TraczykZack/the-bone-factory"><img src="images/bonefactory.PNG" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="http://philome.la/TraczykZack/the-bone-factory"><img src="assets/images/bonefactory.PNG" alt="" width="2000" class="cards"/></a>
       <h4>Bone Factory<i>July 2014</i></h4>
       <p class="tag"><a href="http://twinery.org/">Twine</a></p>
       <p class="text_column">Bone Factory is a text based game made with Twine. This was one of the first games I ever made.</p>
       <p class="text_footer"><a href="http://philome.la/TraczykZack/the-bone-factory">Play the game</a></p>
     </div>
-    <div class="thumbnail"> <a href="Excel/Excel.html"><img src="images/Excel.PNG" alt="Excel Project" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="Excel/Excel.html"><img src="assets/images/Excel.PNG" alt="Excel Project" width="2000" class="cards"/></a>
       <h4>Excel Projects</h4>
       <p class="tag">Microsoft Excel 2016</p>
       <p class="text_column">Here are a couple of examples showing my profficency in Microsoft Word.</p>
@@ -83,19 +83,19 @@
       <p class="text_column">As a certified Microsoft Office Excel Specialist I have numerous examples of my profficency with Excel.</p>
       <p class="text_footer"><a href="">More information</a></p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="assets/images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
       <h4>TITLE</h4>
       <p class="tag">HTML, CSS, JS, WordPress</p>
       <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p class="text_footer"><a href="">More information</a></p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="assets/images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
       <h4>TITLE</h4>
       <p class="tag">HTML, CSS, JS, WordPress</p>
       <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p class="text_footer"><a href="">More information</a></p>
     </div>
-    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+    <div class="thumbnail"> <a href="#"><img src="assets/images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
       <h4>TITLE</h4>
       <p class="tag">HTML, CSS, JS, WordPress</p>
       <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
