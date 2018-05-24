@@ -69,14 +69,14 @@ a {
 }
 #examples img {
     margin-left: 10px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     float: left;
 }
 #examples #thumbnail p {
     font-size: 50px;
     display: inline-block;
-    height: 25px;
+    height: 30px;
     margin-top: 10px;
     margin-left: 50px;
     padding: 0px;
