@@ -220,7 +220,7 @@ footer {
 }
 .intro {
 	display: inline-block;
-	background-color: #f4ad42;
+	background: linear-gradient(to bottom right, #ff7f00, #f4ad42, #ffcc7f);
 }
 .profile {
 	width: 350px;
