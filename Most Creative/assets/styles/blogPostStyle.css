@@ -1,27 +1,24 @@
 @charset "UTF-8";
 body {
 	font-family: 'Kavivanar', cursive;
-	display: grid;
-	grid-template-columns: 5% auto;
-	grid-template-rows: auto;
-}
-#navbar{
 }
 #navbar ul{
 	list-style-type: none;
 	font-size: 50px;
 	position: fixed;
 	top: 0px;
-	left: 0px;
+	left: 50px;
 	padding: 0px;
 	margin: 0px;
+    z-index: 0;
 }
 #navbar a {
 	text-decoration: none;
 	color: black;
 }
 #content{
-	margin: 5em 2em 0 2em;
+    z-index: 1;
+	margin: 5em 2em 0 7em;
 	padding: 0px;
 }
 #header {
@@ -52,7 +49,6 @@ a {
 #wrapper {
     text-align: justify;
 	padding: .2em 1em 2em 1em;
-	grid-column: 2 / 3;
 	font-size: 30px;
 	color: #FFFFFF;
 	background-color: #5D5E5D;
@@ -71,13 +67,14 @@ a {
     margin-left: 10px;
     width: 100px;
     height: 100px;
-    display: inline-block;
+    float: left;
 }
 #examples #thumbnail p {
     font-size: 50px;
     display: inline-block;
-    height: 25px;
+    height: 40px;
     margin-top: 10px;
+    margin-left: 50px;
     padding: 0px;
 }
 @media screen and (max-width:769px) {
