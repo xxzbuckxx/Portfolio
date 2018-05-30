@@ -17,8 +17,9 @@ body {
 	color: black;
 }
 #content{
+    position: absolute;
     z-index: 1;
-	margin: 5em 2em 0 7em;
+	margin: 5em 2em 7em 7em;
 	padding: 0px;
 }
 #header {
@@ -53,14 +54,19 @@ a {
 	color: #FFFFFF;
 	background-color: #5D5E5D;
 }
-#thumbnail {
+#start {
+    margin-top: 1em;
+    align-content: center;
+    width: 100%;
+}
+.thumbnail {
     margin-top: 20px;
     display: block;
     background-color: #F8F8F8;
     border-bottom: 4px solid #6DC7D0;
     padding: 0px;
 }
-#thumbnail:hover {
+.thumbnail:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #examples img {
@@ -69,7 +75,7 @@ a {
     height: 100px;
     float: left;
 }
-#examples #thumbnail p {
+#examples .thumbnail p {
     font-size: 50px;
     display: inline-block;
     height: 40px;
