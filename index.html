@@ -17,32 +17,30 @@
     <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 </head>
 <body>
+    
 <!-- Main Container -->
-<div class="container"> 
-  <!-- Header -->
-  <header class="header">
-    <h4 class="logo">This is My Portfolio.</h4>
-  </header>
-  <div class="menu">
-      <ul>
-        <li><a href="Most%20Creative/Creative.html">Most Creative</a></li>
-		  <li><a href="Best%20Cources/Best.html">Best Cources</a></li>
-        <li><a href="https://github.com/xxzbuckxx">Github</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-  </div>
+<div id="site"> 
+    <h1 id="title">This is My Portfolio.</h1>
+    <div class="menu">
+        <ul id="menu_container">
+            <li class="menu_item"><a href="Most%20Creative/Creative.html">Most Creative</a></li>
+            <li class="menu_item"><a href="Best%20Cources/Best.html">Best Cources</a></li>
+            <li class="menu_item"><a href="https://github.com/xxzbuckxx">Github</a></li>
+            <li class="menu_item"><a href="#">About</a></li>
+        </ul>
+    </div>
   <!-- Hero Section -->
-  <section class="intro">
+  <div class="intro">
       <h3>Zack Traczyk</h3>
       <p>When posed with the question, "Who is Zack Traczyk?" --the words hardworking and willing to learn come quickly to mind. As an aved coder and persistant learner, I throw myself at daunting problems, always trying to understand how they work and what is the best solution.</p>
       <p>Here you can find a few of the projects I have done over the years. Some are complete while others are still works in progress.</p>
-  </section>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-	$(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 178) {
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 170) {
             $('.menu').addClass('fixed');
-        } else if($(window).scrollTop() < 130){
+        } else {
             $('.menu').removeClass('fixed');
         }
     });
