@@ -9,7 +9,7 @@ body {
     padding:.5em;
     position:absolute;
     display: block;
-    top:170px;
+    top:350px;
     width:100%;
     z-index: 10;
 }
@@ -38,36 +38,8 @@ a {
 
 /*----------------FULL SCREEN----------------*/
 @media only screen and (min-width: 801px) {
-    #welcome{
-        width: 60em;
-        height: 12em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -6em 0 0 -30em;
-    }
-    
-    #welcome_title-1 {
-        font-size: 8em;
-        width: 7em;
-        height: 1.2em;
-        text-align: center;
-        margin: auto;
-    }
-    
-    #welcome_title-2 {
-        font-size: 1em;
-        font-family: 'Open Sans', sans-serif;
-        color: #686868;
-        width: 10em;
-        height: 1.2em;
-        text-align: right;
-        float: right;
-        margin-right: 8em;
-        margin-top: -1.6em;
-    }
-    
     #title {
+        font-family: 'Coming Soon', cursive;
         margin: .1em 0 0 .2em;;
         width: 7em;
         text-align: center;
