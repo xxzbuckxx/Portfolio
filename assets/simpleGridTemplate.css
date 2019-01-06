@@ -2,18 +2,16 @@
 body {
     margin: 0;
 }
-
 .menu {
     background: black;
-    height:2em;
+    height:40px;
     padding:.5em;
     position:absolute;
     display: block;
-    top:350px;
-    width:100%;
+    top: 235px;
+    width: 90%;
     z-index: 10;
 }
-
 .fixed {
     position:fixed;
     top:0;
@@ -26,17 +24,6 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-}
-.logo {
-	font-family: 'Abril Fatface', cursive;
-	color: #fff;
-	font-weight: bold;
-	letter-spacing: 2px;
-	text-align: left;
-	padding-top: 15px;
-	margin: 0.5em auto 0px .5em;
-	padding-bottom: 10px;
-	font-size: 80px;
 }
 .hero_header {
 	color: #FFFFFF;
@@ -64,7 +51,7 @@ a {
     */
 	padding-bottom: 35px;
 	padding-top: 0px;
-	margin-top: -5px;
+	margin-top: -20px;
 	margin-bottom: 0px;
     width: 80%;
     margin-left: 10%;
@@ -118,21 +105,12 @@ a {
 }
 /* More info */
 .intro {
+    
+	background: linear-gradient(to bottom right, #ff7f00, #f4ad42, #ffcc7f);
+    font-family: 'Thasadith', sans-serif;
 	background-color: #FFFFFF;
-	padding-bottom: 35px;
-}
-.column {
-	width: 50%;
-	text-align: center;
-	padding-top: 30px;
-	float: left;
-}
-.intro .column h3 {
-	color: #FFFFFF;
-	text-align: center;
-}
-.intro .column p {
-	color: #FFFFFF;
+	padding-bottom: 55px;
+    padding-left: 30px;
 }
 .cards {
 	width: 100%;
@@ -141,17 +119,7 @@ a {
 	max-height: 200px;
 	opacity: 0.8;
 }
-.intro .column p {
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	line-height: 25px;
-	font-weight: lighter;
-	margin-left: 20px;
-	margin-right: 20px;
-	width: 80%;
-	margin-top: 4%;
-}
+
 .button {
 	width: 400px;
 	margin-top: 40px;
@@ -193,10 +161,6 @@ footer {
 	padding-top: 60px;
 	padding-bottom: 60PX;
 }
-.intro {
-	display: inline-block;
-	background: linear-gradient(to bottom right, #ff7f00, #f4ad42, #ffcc7f);
-}
 .profile {
 	width: 350px;
 	height: 350px;
@@ -215,16 +179,25 @@ footer {
     text-decoration: none;
 }
 /*----------------FULL SCREEN----------------*/
-@media only screen and (min-width: 801px) {
-    #title {
-        font-family: 'Coming Soon', cursive;
-        margin: .1em 0 0 .2em;;
-        width: 7em;
-        text-align: center;
-        font-size: 8em;
-        padding: 0;
+@media only screen and (min-width: 1097px) {
+    #site {
+        margin-top: 100px;
+        width: 90%;
+        margin-left: 5%;
     }
     
+    #title {
+        font-family: 'Sarabun', sans-serif;
+        margin: .1em 0 0 .2em;
+        font-size: 100px;
+        padding: 0;
+    }
+    .intro {
+        margin-top: 61px;
+    }
+    .intro p {
+        font-size: 30px;
+    }
     #menu_container {
         width: 49em;
         margin: auto;
@@ -295,12 +268,37 @@ footer {
         margin-right: 30px;
     }
 }
-/*-----------------------------------------*/
+/* Small Desktops */
+@media (min-width: 770px) and (max-width: 1096px) {
+    .thumbnail {
+        width: 48%;
+        border-radius: 5px;
+    }
+    .text_column {
+        width: 90%;
+        margin: 0;
+        padding: 20px;
+    }
+    #menu_container {
+        width: 49em;
+        margin: auto;
+    }
+    
+    .menu_item {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Julius Sans One', sans-serif;
+        margin-top: .2em;
+        list-style: none;
+        display: inline-block;
+        width: 8em;
+        color: whitesmoke;
+    }
+}
 
-/*-----------------------------------------*/
 
-/*----------------HALF SCREEN--------------*/
-@media only screen and (max-width: 800px) {
+/* Small Tablets */
+@media (min-width: 415px)and (max-width: 769px) {
     #title {
         margin: .5em auto 0 auto;
         width: 7em;
@@ -324,144 +322,57 @@ footer {
         width: 8em;
         color: whitesmoke;
     }
-    
+    .text_column {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .thumbnail {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .text_column {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90%;
+    }
 }
-/*-------------------------------------------*/
-/* Small Desktops */
-@media (min-width: 770px) and (max-width: 1096px) {
-.text_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 48%;
-    border-radius: 5px;
-}
-.text_column {
-	width: 90%;
-	margin: 0;
-	padding: 20px;
-}
-.intro .column p {
-	width: 80%;
-}
-}
-
-
-
-
-
-
-
 
 
 /* Mobile */
 @media (max-width: 414px) {
-.logo {
-	width: 100%;
-	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-    font-size: 22px;
-}
-.text_column {
-	width: 100%;
-	text-align: justify;
-	padding: 0;
-}
-.intro .column p {
-	width: 80%;
-	margin-left: 0px;
-}
-.text_column {
-	padding-left: 20px;
-}
-.thumbnail {
-	width: 100%;
-    border-radius: 0px;
-}
-.column {
-	width: 100%;
-	margin-top: 0px;
-}
-.hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
-	text-align: center;
-}
-.profile {
-	border-radius: 0%;
-    height: 100%;
-}
-}
-
-/* Small Tablets */
-@media (min-width: 415px)and (max-width: 769px) {
-.logo {
-	width: 100%;
-	text-align: center;
-	margin-top: 13px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-    font-size: 50px;
-}
-.text_column {
-	width: 100%;
-	text-align: left;
-	padding: 0;
-}
-.thumbnail {
-	width: 100%;
-}
-.column {
-	width: 100%;
-	margin-top: 0px;
-}
-.thumbnail {
-	width: 100%;
-    border-radius: 0px;
-}
-.text_column {
-	padding-left: 20px;
-	padding-right: 20px;
-	width: 90%;
-}
-.column {
-	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-.profile {
-	width: 100%;
-}
-.intro .column p {
-	width: 90%;
-	text-align: center;
-	padding-left: 0px;
-}
-.profile {
-	border-radius: 0%;		
-}
-}
-
-/* Small Desktops */
-@media (min-width: 770px) and (max-width: 1096px) {
-.text_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 48%;
-    border-radius: 5px;
-}
-.text_column {
-	width: 90%;
-	margin: 0;
-	padding: 20px;
-}
-.intro .column p {
-	width: 80%;
-}
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 13px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        font-size: 22px;
+    }
+    .text_column {
+        width: 100%;
+        text-align: justify;
+        padding: 0;
+    }
+    .text_column {
+        padding-left: 20px;
+    }
+    .thumbnail {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .hero_header {
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 22px;
+        text-align: center;
+    }
 }
