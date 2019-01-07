@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
     margin: 0;
+    background: #fffcf9
 }
 .menu {
     background: black;
@@ -105,12 +106,9 @@ a {
 }
 /* More info */
 .intro {
-    
-	background: linear-gradient(to bottom right, #ff7f00, #f4ad42, #ffcc7f);
+	/*background: linear-gradient(to bottom right, #ff7f00, #f4ad42, #ffcc7f);*/
     font-family: 'Thasadith', sans-serif;
-	background-color: #FFFFFF;
 	padding-bottom: 55px;
-    padding-left: 30px;
 }
 .cards {
 	width: 100%;
@@ -193,10 +191,14 @@ footer {
         padding: 0;
     }
     .intro {
-        margin-top: 61px;
+        margin-top: 81px;
     }
     .intro p {
         font-size: 30px;
+    }
+    .intro img {
+        float: right;
+        width: 400px;
     }
     #menu_container {
         width: 49em;
