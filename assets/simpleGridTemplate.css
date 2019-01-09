@@ -20,7 +20,6 @@ body {
     position:fixed;
     top:0;
 }
-
 .menu_item:hover {
     color: orange;
 }
@@ -205,7 +204,6 @@ footer {
         width: 49em;
         margin: auto;
     }
-    
     .menu_item {
         text-align: center;
         font-size: 1.5em;
@@ -273,6 +271,35 @@ footer {
 }
 /* Small Desktops */
 @media (min-width: 770px) and (max-width: 1096px) {
+    #site {
+        margin-top: 130px;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    #title {
+        font-family: 'Sarabun', sans-serif;
+        margin: .1em 0 0 .2em;
+        font-size: 80px;
+        padding: 0;
+    }
+    .menu {
+        width: 100%;
+        margin-left: -2.5%;
+    }
+    .fixed {
+        top: 0;
+    }
+    .intro {
+        margin-top: 81px;
+    }
+    .intro p {
+        font-size: 28px;
+    }
+    .intro img {
+        float: right;
+        width: 300px;
+        padding-left: 30px;
+    }
     .thumbnail {
         width: 48%;
         border-radius: 5px;
@@ -302,14 +329,25 @@ footer {
 
 /* Small Tablets */
 @media (min-width: 415px)and (max-width: 769px) {
+    #site {
+        margin-top: 170px;
+        width: 95%;
+        margin-left: 2.5%;
+    }
     #title {
         margin: .5em auto 0 auto;
-        width: 7em;
         text-align: center;
-        font-size: 5em;
+        font-size: 3em;
         padding: 0;
     }
-    
+    .menu {
+        height: 30px;
+        width: 100%;
+        margin-left: -2.5%;
+    }
+    .fixed {
+        top: 0;
+    }
     #menu_container {
         width: 36em;
         margin: auto;
@@ -324,6 +362,14 @@ footer {
         display: inline-block;
         width: 8em;
         color: whitesmoke;
+    }
+    .intro {
+        margin-top: 100;
+    }
+    .intro img {
+        float: right;
+        width: 400px;
+        padding-left: 30px;
     }
     .text_column {
         width: 100%;
