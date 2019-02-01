@@ -197,18 +197,20 @@ footer {
         font-size: 30px;
     }
     .intro #desc {
+        height: 300px;
     }
-    .intro img {
+    .intro #icon {
         float: right;
         width: 400px;
         padding-left: 30px;
     }
     .intro #start {
-        margin-top: 10px;
+        position: relative;
+        z-index: -1;
         padding: 0 20px 0 0;
         float: left;
         clear: right;
-        width: 40%;
+        width: 30%;
     }
     #menu_container {
         width: 49em;
