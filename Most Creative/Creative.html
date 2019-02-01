@@ -1,35 +1,61 @@
 <!doctype html>
+<!--
+    To do
+    -----------
+    *Revamp site, especially project examples
+    *checklist: https://learntocodewith.me/posts/portfolio-tips/
+-->
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio</title>
+<title>Traczyk</title>
 <link rel="shortcut icon" href="assets/images/favicon.ico">
-<link href="assets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Kavivanar" rel="stylesheet">
+<link href="../assets/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Sarabun|Thasadith|Noto+Sans" rel="stylesheet">
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-	$('#navbar').click(function(){
-		$(body).hide();
-	});
-	
-</script>
-	<div id="navbar">
-		<ul>
-			<!--<li>Logo</li>-->
-			<li><a href="../index.html"><b>&lt;--</b> Home</a></li>
-		</ul>
-	</div>
-	<div id="content">
-		<div id="header">
-			<h1>Creative Project.</h1>
-			<h3>Most Creative Project</h3>
-		</div>
-		<div id="wrapper">
-            <img id="start" src="assets/images/Capture.PNG">
-			<p>My most creative project was Blob Mob because of its use of music, digital art, and game design.</p>
-		</div>
-	</div>
+    
+<!-- Main Container -->
+<div id="site"> 
+    <h1 id="title">Most Creative Project.</h1>
+    <div class="menu">
+        <ul id="menu_container">
+            <li class="menu_item"><a href="../index.html">Gallery</a></li>
+            <li class="menu_item"><a href="">Most Creative</a></li>
+            <li class="menu_item"><a href="../Best%20Cources/Best.html">Best Courses</a></li>
+            <li class="menu_item"><a href="https://github.com/xxzbuckxx">Github</a></li>
+        </ul>
+    </div>
+  <!-- Hero Section -->
+  <div class="intro">
+    <img id="start" src="assets/images/Capture.PNG">
+    <p id="desc">My most creative project was Blob Mob because of its use of music, digital art, and game design. I started development on blobmob on October 13, 2016 (the beginning of my freshman year). I origanlly started making the project in an online html editor. I was experimenting with animations and HTML5's canvas. However, as the project grew more complicated I had to start a git respitory and work on my home computer. My favorite part</p>
+    <p>My </p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 235) {
+            $('.menu').addClass('fixed');
+        } else {
+            $('.menu').removeClass('fixed');
+        }
+    });
+  </script>
+  
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <div class="button">zstraczyk324@gmail.com</div>
+  </footer>
+  <!-- Copyrights Section -->
+  <div class="copyright">Developed by <strong>Zack Traczyk</strong></div>
+</div>
+<!-- Main Container Ends -->
 </body>
+</html>
+
+    
+    

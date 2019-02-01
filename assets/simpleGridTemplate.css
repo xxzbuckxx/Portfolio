@@ -196,10 +196,19 @@ footer {
     .intro p {
         font-size: 30px;
     }
+    .intro #desc {
+    }
     .intro img {
         float: right;
         width: 400px;
         padding-left: 30px;
+    }
+    .intro #start {
+        margin-top: 10px;
+        padding: 0 20px 0 0;
+        float: left;
+        clear: right;
+        width: 40%;
     }
     #menu_container {
         width: 49em;
