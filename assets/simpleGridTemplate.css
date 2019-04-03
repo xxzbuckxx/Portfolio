@@ -5,6 +5,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+#site {
+    overflow-x: hidden;
+}
 .menu {
     background: black;
     height:40px;
@@ -350,7 +353,7 @@ footer {
     #title {
         margin: auto auto 90px auto;
         text-align: center;
-        font-size: 60px;
+        font-size: 50px;
         padding: 0;
     }
     .menu {
