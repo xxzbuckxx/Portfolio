@@ -2,6 +2,7 @@
 body {
     margin: 0;
     background: #fffcf9;
+    max-width: 100%;
     overflow-x: hidden;
 }
 .menu {
