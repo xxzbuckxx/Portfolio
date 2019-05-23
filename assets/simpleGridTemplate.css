@@ -18,6 +18,14 @@ body {
     width: 90%;
     z-index: 10;
 }
+#site #icon {
+    display: inline-block;
+    width: 100px;
+}
+#site #icon .small{
+    display: inline-block;
+    width: 100px;
+}
 #title {
     font-family: 'Sarabun', sans-serif;
 }
@@ -191,6 +199,7 @@ footer {
         margin: .1em 0 0 .2em;
         font-size: 100px;
         padding: 0;
+        display: inline-block;
     }
     .intro {
         margin-top: 81px;
@@ -200,11 +209,6 @@ footer {
     }
     .intro #desc {
         height: 300px;
-    }
-    .intro #icon {
-        float: right;
-        width: 400px;
-        padding-left: 30px;
     }
     .intro #start {
         position: relative;

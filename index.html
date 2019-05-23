@@ -19,6 +19,7 @@
     
 <!-- Main Container -->
 <div id="site"> 
+    <img id="icon" src="logo.png"/>
     <h1 id="title">I'm Zack Traczyk.</h1>
     <div class="menu">
         <ul id="menu_container">
@@ -30,7 +31,6 @@
     </div>
   <!-- Hero Section -->
   <div class="intro">
-      <img id="icon" src="assets/images/LogoBig.jpg"/>
       <p>Hello. I’m a coding enthusiast and design hobbyist. I’m currently a student at Oak Park River Forest High School where I enjoy playing soccer and attending Graphic Design Club. I also enjoy making video games with RPG Maker, twine, and HTML5's canvas.</p>
       <p>Here you can find a few of the projects I have done over the years. Some are complete while others are still works in progress.</p>
   </div>
@@ -43,6 +43,19 @@
             $('.menu').removeClass('fixed');
         }
     });
+      
+    $(window).resize(function () {
+        if ($(window).width() < 1096) {
+            $('#icon').addClass('small');
+        } else if ($(window).width() < 770){
+            $('#icon').addClass('tablet');
+        } else if ($(window).width() < 414){
+            $('#icon').addClass('mobile');  
+        } else {
+            $('.menu').removeClass('fixed');
+        }
+    });
+      
   </script>
   <!-- Stats Gallery Section -->
   <div class="gallery">
